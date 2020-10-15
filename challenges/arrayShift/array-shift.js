@@ -1,6 +1,7 @@
 'use strict'
 
 const insertShiftArray = (array, value) => {
+  
   let slicePointOne = Math.floor(array.length / 2);
   let slicePointTwo = Math.ceil(array.length / 2);
 
@@ -9,5 +10,5 @@ const insertShiftArray = (array, value) => {
 
   let newArray = [...arrayOne , value, ...arrayTwo];
   return newArray;
-  
+
   }
