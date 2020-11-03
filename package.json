@@ -4,7 +4,7 @@
   "description": "# Reverse an Array <!-- Short summary or background information --> reverse an array provided by the user",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
