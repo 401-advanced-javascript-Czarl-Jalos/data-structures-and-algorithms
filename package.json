@@ -4,7 +4,7 @@
   "description": "# Reverse an Array <!-- Short summary or background information --> reverse an array provided by the user",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-Czarl-Jalos/data-structures-and-algorithms#readme",
   "dependencies": {
-    "jest": "^26.5.3"
+    "jest": "^26.6.2"
   }
 }
