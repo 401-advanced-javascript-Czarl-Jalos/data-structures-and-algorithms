@@ -1,14 +1,14 @@
 'use strict'
 
-const insertShiftArray = (array, value) => {
-  
-  let slicePointOne = Math.floor(array.length / 2);
-  let slicePointTwo = Math.ceil(array.length / 2);
+function insertShiftArray(arr, value) {
+  let firstHalf = Math.floor(arr.length / 2);
+  let secondHalf = Math.ceil(arr.length / 2);
 
-  let arrayOne = array.slice(0, slicePointOne);
-  let arrayTwo = array.slice(slicePointTwo);
+  let firstArr = arr.slice(0, firstHalf);
+  let secondArr = arr.slice(secondHalf);
 
-  let newArray = [...arrayOne , value, ...arrayTwo];
+  let newArray = [...firstArr, value, ...secondArr];
   return newArray;
+}
 
-  }
+
