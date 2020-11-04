@@ -60,4 +60,14 @@ describe('Binary Tree tests', () => {
     SearchTree.add(12);
     expect(SearchTree.postOrder(SearchTree.root)).toEqual([ 9, 12, 11, 10 ]);
   })
+
+  it('Can successfully return a the maximun value in stored in the tree', () => {
+    const SearchTree = new BinarySearchTree();
+
+    SearchTree.add(10);
+    SearchTree.add(11);
+    SearchTree.add(9);
+    SearchTree.add(12);
+    expect(SearchTree.findMaximumValue(SearchTree.root)).toEqual(12);  
+  })
 });
