@@ -30,33 +30,34 @@ describe('Binary Tree tests', () => {
 
 
   it('Can successfully return a collection from a preorder traversal', () => {
-const Node1 = new Node(13)
-const SearchTree = new BinarySearchTree();
 
-// tree.root = Node1;
-SearchTree.add(10);
-SearchTree.add(11);
-SearchTree.add(9);
-SearchTree.add(12);
+    const SearchTree = new BinarySearchTree();
 
-// console.log(SearchTree);
-// console.log(tree);
-    expect(SearchTree.preOrder(SearchTree.root)).toEqual([ 1, 2, 4, 5, 3 ]);
+    SearchTree.add(10);
+    SearchTree.add(11);
+    SearchTree.add(9);
+    SearchTree.add(12);
+    expect(SearchTree.preOrder(SearchTree.root)).toEqual([ 10, 9, 11, 12 ]);
   })
 
-  // it('Can successfully return a collection from an inorder traversal', () => {
+  it('Can successfully return a collection from an inorder traversal', () => {
+    const SearchTree = new BinarySearchTree();
+
+    SearchTree.add(10);
+    SearchTree.add(11);
+    SearchTree.add(9);
+    SearchTree.add(12);
+    expect(SearchTree.inOrder(SearchTree.root)).toEqual([ 9, 10, 11, 12 ]);
+  })
 
 
+  it('Can successfully return a collection from a postorder traversal', () => {
+    const SearchTree = new BinarySearchTree();
 
-
-  // })
-
-
-  // it('Can successfully return a collection from a postorder traversal', () => {
-
-
-
-
-
-  // })
+    SearchTree.add(10);
+    SearchTree.add(11);
+    SearchTree.add(9);
+    SearchTree.add(12);
+    expect(SearchTree.postOrder(SearchTree.root)).toEqual([ 9, 12, 11, 10 ]);
+  })
 });
