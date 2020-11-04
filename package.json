@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-Czarl-Jalos/data-structures-and-algorithms#readme",
   "dependencies": {
-    "jest": "^26.5.3"
+    "jest": "^26.6.2"
   }
 }
