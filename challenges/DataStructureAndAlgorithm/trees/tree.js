@@ -86,7 +86,6 @@ class BinaryTree {
       if (currentNode) {
         outPutPost.push(currentNode.value);
       }
- 
     return outPutPost;
   }
   
@@ -147,7 +146,9 @@ class BinarySearchTree extends BinaryTree {
         this.insertNode(node.right, newNode)
       }
     }
+    return false;
   }
+
 
   contains(value) {
     let currentNode = this.root;
@@ -165,34 +166,6 @@ class BinarySearchTree extends BinaryTree {
     return false;
   }
 }
-
-
-// const tree = new BinaryTree();
-const Node2 = new Node(2);
-// const Node3 = new Node(3);
-// const Node4 = new Node(4)
-// const Node5 = new Node(5);
-// const Nodex = new Node(Node2, Node4, Node5 ); 
-// const Node1 = new Node(1, new Node(Node2, Node4, Node5), Node3);
-// const Tree = new BinaryTree(Node1);
-
-// const SearchTree = new BinarySearchTree();
-// SearchTree.add(2);
-// SearchTree.add(5);
-// SearchTree.add(1);
-// // SearchTree.add(3);
-// // SearchTree.add(4);
-// console.log(SearchTree)
-// tree.root = Node1;
-
-// console.log(Tree);
-
-
-
-// console.log(tree);
-// Tree.preOrder(Tree.root);
-// tree.inOrder(tree.root);
-// tree.postOrder(tree.root);
 
 
 module.exports = {
