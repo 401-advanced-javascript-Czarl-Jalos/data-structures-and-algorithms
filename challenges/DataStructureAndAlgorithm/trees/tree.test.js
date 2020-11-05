@@ -70,4 +70,23 @@ describe('Binary Tree tests', () => {
     SearchTree.add(12);
     expect(SearchTree.findMaximumValue(SearchTree.root)).toEqual(12);  
   })
+
+  it('Can successfully traverse the input tree using a Breadth-first', () => {
+    const SearchTree = new BinarySearchTree();
+
+    SearchTree.add(10);
+    SearchTree.add(11);
+    SearchTree.add(9);
+    SearchTree.add(4);
+    SearchTree.add(6);
+    SearchTree.add(12);
+    SearchTree.add(16);
+    SearchTree.add(19);
+    SearchTree.add(3);
+  
+  
+    expect(SearchTree.breadthFirst(SearchTree.root)).toEqual([10,9,11,4,12,3,6,19]);  
+  })
+
+
 });
